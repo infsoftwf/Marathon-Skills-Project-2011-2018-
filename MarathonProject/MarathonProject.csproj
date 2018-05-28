@@ -1,0 +1,494 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A8D2C64E-6B89-46E1-8137-7CB78AE8B8C1}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MarathonProject</RootNamespace>
+    <AssemblyName>MarathonProject</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>0</WarningLevel>
+    <CheckForOverflowUnderflow>true</CheckForOverflowUnderflow>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <NoWin32Manifest>true</NoWin32Manifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Forms\ss3\ImportVolunteers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ss3\ImportVolunteers.Designer.cs">
+      <DependentUpon>ImportVolunteers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ss3\RunnerSponsor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ss3\RunnerSponsor.Designer.cs">
+      <DependentUpon>RunnerSponsor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ss3\VolunteerManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ss3\VolunteerManager.Designer.cs">
+      <DependentUpon>VolunteerManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ss4\BMR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ss4\BMR.Designer.cs">
+      <DependentUpon>BMR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ss4\REmailDetermine.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ss4\REmailDetermine.Designer.cs">
+      <DependentUpon>REmailDetermine.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ss4\BMI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ss4\BMI.Designer.cs">
+      <DependentUpon>BMI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ss4\BMRDetermine.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ss4\BMRDetermine.Designer.cs">
+      <DependentUpon>BMRDetermine.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ss4\SponsorshipOverview.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ss4\SponsorshipOverview.Designer.cs">
+      <DependentUpon>SponsorshipOverview.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ss5\Certificate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ss5\Certificate.Designer.cs">
+      <DependentUpon>Certificate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ss5\UserAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ss5\UserAdd.Designer.cs">
+      <DependentUpon>UserAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ss5\UserEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ss5\UserEdit.Designer.cs">
+      <DependentUpon>UserEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ss5\UsersManagement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ss5\UsersManagement.Designer.cs">
+      <DependentUpon>UsersManagement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ss5\Token.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ss5\Token.Designer.cs">
+      <DependentUpon>Token.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ss5\PostRunnerManagement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ss5\PostRunnerManagement.Designer.cs">
+      <DependentUpon>PostRunnerManagement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ss4\RunnerManagement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ss4\RunnerManagement.Designer.cs">
+      <DependentUpon>RunnerManagement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ss4\PostResultMarathon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ss4\PostResultMarathon.Designer.cs">
+      <DependentUpon>PostResultMarathon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ss2\ASetInventory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ss2\ASetInventory.Designer.cs">
+      <DependentUpon>ASetInventory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ss3\MarathonMap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ss3\MarathonMap.Designer.cs">
+      <DependentUpon>MarathonMap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ss2\PrintInventory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ss2\PrintInventory.Designer.cs">
+      <DependentUpon>PrintInventory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ss2\MarathonInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ss2\MarathonInfo.Designer.cs">
+      <DependentUpon>MarathonInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ss2\MarathonLong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ss2\MarathonLong.Designer.cs">
+      <DependentUpon>MarathonLong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ss2\AInventory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ss2\AInventory.Designer.cs">
+      <DependentUpon>AInventory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ss3\AddEditCharity.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ss3\AddEditCharity.Designer.cs">
+      <DependentUpon>AddEditCharity.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ss2\RunnerResult.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ss2\RunnerResult.Designer.cs">
+      <DependentUpon>RunnerResult.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ss1\Contacts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ss1\Contacts.Designer.cs">
+      <DependentUpon>Contacts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ss1\CharityInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ss1\CharityInfo.Designer.cs">
+      <DependentUpon>CharityInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ss1\AdminMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ss1\AdminMenu.Designer.cs">
+      <DependentUpon>AdminMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ss1\LoginRunner.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ss1\LoginRunner.Designer.cs">
+      <DependentUpon>LoginRunner.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ss1\CoordinatorMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ss1\CoordinatorMenu.Designer.cs">
+      <DependentUpon>CoordinatorMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ss1\RunnerMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ss1\RunnerMenu.Designer.cs">
+      <DependentUpon>RunnerMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ss1\MoreInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ss1\MoreInfo.Designer.cs">
+      <DependentUpon>MoreInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ss1\CharityList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ss1\CharityList.Designer.cs">
+      <DependentUpon>CharityList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ss1\Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ss1\Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ss2\RunnerEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ss2\RunnerEdit.Designer.cs">
+      <DependentUpon>RunnerEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ss2\RunnerRegister.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ss2\RunnerRegister.Designer.cs">
+      <DependentUpon>RunnerRegister.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ss2\RunnerConfirmation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ss2\RunnerConfirmation.Designer.cs">
+      <DependentUpon>RunnerConfirmation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ss2\MarathonRegister.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ss2\MarathonRegister.Designer.cs">
+      <DependentUpon>MarathonRegister.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ss1\SponsorshipConfirmation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ss1\SponsorshipConfirmation.Designer.cs">
+      <DependentUpon>SponsorshipConfirmation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ss1\SponsorRunner.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ss1\SponsorRunner.Designer.cs">
+      <DependentUpon>SponsorRunner.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ss3\ManageCharities.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ss3\ManageCharities.Designer.cs">
+      <DependentUpon>ManageCharities.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ss4\RunnerDetermine.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ss4\RunnerDetermine.Designer.cs">
+      <DependentUpon>RunnerDetermine.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Global\globals.cs" />
+    <Compile Include="Forms\ss1\MainMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ss1\MainMenu.Designer.cs">
+      <DependentUpon>MainMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Global\SqlEx.cs" />
+    <Compile Include="INF_TOOLS\DGVEx\DataGridViewCellExHelper.cs" />
+    <Compile Include="INF_TOOLS\DGVEx\DataGridViewHelper.cs" />
+    <Compile Include="INF_TOOLS\DGVEx\DataGridViewTextBoxCellEx.cs" />
+    <Compile Include="INF_TOOLS\INFAPI.cs" />
+    <Compile Include="INF_TOOLS\WinAPI.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Forms\ss3\ImportVolunteers.resx">
+      <DependentUpon>ImportVolunteers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ss3\RunnerSponsor.resx">
+      <DependentUpon>RunnerSponsor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ss3\VolunteerManager.resx">
+      <DependentUpon>VolunteerManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ss4\BMR.resx">
+      <DependentUpon>BMR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ss4\REmailDetermine.resx">
+      <DependentUpon>REmailDetermine.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ss4\BMI.resx">
+      <DependentUpon>BMI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ss4\BMRDetermine.resx">
+      <DependentUpon>BMRDetermine.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ss4\SponsorshipOverview.resx">
+      <DependentUpon>SponsorshipOverview.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ss5\Certificate.resx">
+      <DependentUpon>Certificate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ss5\UserAdd.resx">
+      <DependentUpon>UserAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ss5\UserEdit.resx">
+      <DependentUpon>UserEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ss5\UsersManagement.resx">
+      <DependentUpon>UsersManagement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ss5\Token.resx">
+      <DependentUpon>Token.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ss5\PostRunnerManagement.resx">
+      <DependentUpon>PostRunnerManagement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ss4\RunnerManagement.resx">
+      <DependentUpon>RunnerManagement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ss4\PostResultMarathon.resx">
+      <DependentUpon>PostResultMarathon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ss2\ASetInventory.resx">
+      <DependentUpon>ASetInventory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ss3\MarathonMap.resx">
+      <DependentUpon>MarathonMap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ss2\PrintInventory.resx">
+      <DependentUpon>PrintInventory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ss2\MarathonInfo.resx">
+      <DependentUpon>MarathonInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ss2\MarathonLong.resx">
+      <DependentUpon>MarathonLong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ss2\AInventory.resx">
+      <DependentUpon>AInventory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ss3\AddEditCharity.resx">
+      <DependentUpon>AddEditCharity.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ss2\RunnerResult.resx">
+      <DependentUpon>RunnerResult.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ss1\Contacts.resx">
+      <DependentUpon>Contacts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ss1\CharityInfo.resx">
+      <DependentUpon>CharityInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ss1\LoginRunner.resx">
+      <DependentUpon>LoginRunner.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ss1\MainMenu.resx">
+      <DependentUpon>MainMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ss1\AdminMenu.resx">
+      <DependentUpon>AdminMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ss1\CoordinatorMenu.resx">
+      <DependentUpon>CoordinatorMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ss1\RunnerMenu.resx">
+      <DependentUpon>RunnerMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ss1\MoreInfo.resx">
+      <DependentUpon>MoreInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ss1\CharityList.resx">
+      <DependentUpon>CharityList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ss1\Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ss2\RunnerEdit.resx">
+      <DependentUpon>RunnerEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ss2\RunnerRegister.resx">
+      <DependentUpon>RunnerRegister.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ss2\RunnerConfirmation.resx">
+      <DependentUpon>RunnerConfirmation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ss2\MarathonRegister.resx">
+      <DependentUpon>MarathonRegister.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ss1\SponsorshipConfirmation.resx">
+      <DependentUpon>SponsorshipConfirmation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ss1\SponsorRunner.resx">
+      <DependentUpon>SponsorRunner.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ss3\ManageCharities.resx">
+      <DependentUpon>ManageCharities.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ss4\RunnerDetermine.resx">
+      <DependentUpon>RunnerDetermine.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\emblem-important.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cross-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\map.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\avatar.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BMILine.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arbmi.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ExFlag.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
